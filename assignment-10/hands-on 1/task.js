@@ -4,9 +4,9 @@ let tasks = [];
 
 // 1. Add new task
 export function addTask(title, priority, dueDate) {
-  if (!validateTitle(title)) return "❌ Invalid title";
-  if (!validatePriority(priority)) return "❌ Invalid priority";
-  if (!validateDueDate(dueDate)) return "❌ Due date must be in the future";
+  if (!validateTitle(title)) return "Invalid title";
+  if (!validatePriority(priority)) return "Invalid priority";
+  if (!validateDueDate(dueDate)) return "Due date must be in the future";
 
   const newTask = {
     id: tasks.length + 1,
@@ -17,7 +17,7 @@ export function addTask(title, priority, dueDate) {
   };
 
   tasks = [...tasks, newTask]; // immutable push
-  return "✅ Task added successfully";
+  return "Task added successfully";
 }
 
 // 2. Get all tasks
@@ -30,5 +30,5 @@ export function completeTask(taskId) {
   tasks = tasks.map(t =>
     t.id === taskId ? { ...t, completed: true } : t
   );
-  return "✅ Task marked as complete";
+  return "Task marked as complete";
 }
