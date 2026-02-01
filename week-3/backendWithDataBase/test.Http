@@ -1,0 +1,67 @@
+### Users
+### Read all users
+GET http://localhost:3000/user-api/users
+
+
+### Read users by id
+GET http://localhost:3000/user-api/users/697dba5f4ae3ce601670dcf5
+
+### create users
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"deepe",
+    "password":"jxbxy",
+    "age":22
+}
+
+
+###update the existing user
+PUT http://localhost:3000/user-api/users/697dba5f4ae3ce601670dcf5
+Content-Type: application/json
+
+{
+    "username":"ravi",
+    "password":"qwerty",
+    "age": 22
+}
+
+
+### delete a user 
+DELETE http://localhost:3000/user-api/users/697dba5f4ae3ce601670dcf5
+
+
+
+#####Products
+###read product data
+GET http://localhost:3000/product-api/products
+
+
+### Read products by id
+GET http://localhost:3000/product-api/products/697dce37abd0ba2ad188973a
+
+
+
+### create products
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "name":"hoddy",
+    "brand":"max-wear",
+    "price":1500,
+    "pid":1
+}
+
+
+###update the existing product
+PUT http://localhost:3000/product-api/products/697dce37abd0ba2ad188973a
+Content-Type: application/json
+
+{
+    "price":1900
+}
+
+
+
