@@ -1,7 +1,7 @@
 //Hands-On 1: Shallow Copy (Controlled Mutation Use Case)
 const user={
     id:101,
-    name:"Sidhvi",
+    name:"ravi",
     prefernces:{
         theme:"dark",
         language:"english"
@@ -11,7 +11,7 @@ const user={
 const user1={ //because of this shallow copy when we modify user1 it will also affect user
     //const is not allowing us to reassign user1 but we can modify the properties of user1
     id:111,
-    name:"anusha",
+    name:"deepesh",
     prefernces:{
         theme:"dark",
         language:"hindi"
@@ -19,7 +19,7 @@ const user1={ //because of this shallow copy when we modify user1 it will also a
     };
 let usercopy={...user}//shallow copy
 //modifying user should not affect user1
-user.name="Harini";
+user.name="vivek";
 user.prefernces.theme="light";
 console.log("user:",user);
 console.log("user1:",user1);
