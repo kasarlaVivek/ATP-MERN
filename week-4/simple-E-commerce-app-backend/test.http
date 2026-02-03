@@ -26,7 +26,7 @@ Content-Type: application/json
 
 
 ###req to add products to cart
-PUT http://localhost:3000/user-api/user-cart/user-id/698179dd41e9a2f55f2f2dd4/product-id/69806c3b8e6f15f8214ac3ed
+PUT http://localhost:3000/user-api/user-cart/user-id/698181ce3ea2d5698d5ea522/product-id/698068808e6f15f8214ac3ea
 
 ###read users by id 
 GET http://localhost:3000/user-api/users/698179dd41e9a2f55f2f2dd4

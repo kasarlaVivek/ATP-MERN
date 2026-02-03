@@ -4,7 +4,11 @@ import { Schema,model } from "mongoose";
 const cartSchema = new Schema({
     product:{
         type:Schema.Types.ObjectId,
-        ref: 'product' //name of the product model
+        ref: 'product', //name of the product model
+    },
+    quantity:{
+        type:Number,
+        default:1
     }
 })
 
