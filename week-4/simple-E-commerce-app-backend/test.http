@@ -1,0 +1,32 @@
+###READ products
+GET http://localhost:3000/product-api/products
+
+### create product req
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productName":"laptop",
+    "price":90000,
+    "brand":"Hp"
+}
+
+
+
+### create user req
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"nagesh",
+    "email":"nagesh@gmail.com",
+    "password":"vinay",
+    "cart":[]
+}
+
+
+###req to add products to cart
+PUT http://localhost:3000/user-api/user-cart/user-id/698179dd41e9a2f55f2f2dd4/product-id/69806c3b8e6f15f8214ac3ed
+
+###read users by id 
+GET http://localhost:3000/user-api/users/698179dd41e9a2f55f2f2dd4

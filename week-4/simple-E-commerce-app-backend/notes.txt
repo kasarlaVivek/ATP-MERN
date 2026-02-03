@@ -1,0 +1,4 @@
+password trap:
+Even when an empty string is given , no errors are occured and hash is applied on empty string to give a hashed string.
+Even after applying all the validations they wont work unlike other fields of document due to hashing.
+because the mongoose validators are called at the time of saving hashed password which is considered to be satisfing validators.
