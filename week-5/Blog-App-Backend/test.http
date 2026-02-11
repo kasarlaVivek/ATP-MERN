@@ -1,0 +1,135 @@
+###user register 
+POST http://127.0.0.1:3000/user-api/users
+Content-Type: application/json
+
+{
+    "firstName":"hand",
+    "lastName":"Sharma",
+    "email":"hhand@gmail.com",
+    "password":"hhand@123",
+    "profileImageUrl":"https://www.istockphoto.com/photos/for-example"
+}
+
+
+
+###get articles data
+GET http://127.0.0.1:3000/user-api/articles
+
+
+###add comment to articles
+PUT http://127.0.0.1:3000/user-api/users/6989659182225c1c4f3ec05f/article/69897776fe429bbaa7d59f69
+Content-Type: application/json
+
+{
+    "comment":"nice article"
+}
+
+------------------------------------------------------------------------------------------------------
+
+###author register 
+POST http://127.0.0.1:3000/author-api/users
+Content-Type: application/json
+
+{
+    "firstName":"vikanth",
+    "lastName":"authore",
+    "email":"vikanth@gmail.com",
+    "password":"user@1234",
+    "profileImageUrl":"https://www.istockphoto.com/photos/for-example"
+}
+
+
+
+
+###create article by author
+POST http://127.0.0.1:3000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"698965c782225c1c4f3e",
+    "title":"test3 article",
+    "category":"programming",
+    "content":"content of article-3"
+
+}
+
+
+###read all the articles of a author
+GET http://127.0.0.1:3000/author-api/articles/698965c782225c1c4f3ec061
+
+
+###update article by author
+PUT http://127.0.0.1:3000/author-api/articles
+Content-Type: application/json
+
+{
+    "articleId":"69897784fe429bbaa7d59f6e",
+    "author":"69898fc03586d76d1d2964f1",
+    "title":"test4 article",
+    "category":"programming",
+    "content":"content of article-4"
+
+}
+
+###delete (soft-delete) an article
+DELETE http://127.0.0.1:3000/author-api/articles/author/698965c782225c1c4f3ec061/article/69897776fe429bbaa7d59f69
+
+
+----------------------------------------------------------------------------------------------------------
+
+### authenticate user
+POST http://127.0.0.1:3000/common-api/login
+Content-Type: application/json
+
+{
+    "email":"anurag@gmail.com",
+    "password":"user@123"
+}
+
+
+
+### authenticate author
+POST http://127.0.0.1:3000/common-api/login
+Content-Type: application/json
+
+{
+    "email":"vikas@gmail.com",
+    "password":"user@1234"
+}
+
+### authenticate admin
+POST http://127.0.0.1:3000/common-api/login
+Content-Type: application/json
+
+{
+    "email":"admin@gmail.com",
+    "password":"admin"
+}
+
+
+
+###logout
+GET  http://127.0.0.1:3000/common-api/logout
+
+###update password 
+PUT http://127.0.0.1:3000/common-api/user-password/698acd6171916b51c9a620ae
+Content-Type: application/json
+
+{
+    "oldPassword":"anurag@123",
+    "newPassword":"hhand@123"
+}
+
+
+###test req to path
+GET http://127.0.0.1:3000/test
+
+
+-------------------------------------------------------------------------------------------------------------
+
+###block users by admin
+PUT http://127.0.0.1:3000/admin-api/user-block/6989659182225c1c4f3ec05f
+
+
+###unblock users by admin
+PUT http://127.0.0.1:3000/admin-api/user-unblock/6989659182225c1c4f3ec05f
