@@ -1,7 +1,7 @@
+import React from 'react'
 
-
-
-  return (
+function TasksList({tasks}) {
+    return (
     <div>
       <h3>List of Tasks</h3>
       {tasks.length === 0 ? (
