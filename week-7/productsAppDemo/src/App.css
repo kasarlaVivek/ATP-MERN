@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.parent{
+    background-color: #fff;
+    height: auto; 
+    background-color: #dde1ff;
+    overflow: auto;
+    margin: 7px 21px;
+    padding: 7px 21px;
+}

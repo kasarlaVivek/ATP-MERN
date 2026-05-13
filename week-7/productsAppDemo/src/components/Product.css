@@ -1,0 +1,14 @@
+.container{
+    position: relative;
+    height: auto;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 7px 21px;
+    padding: 7px 21px;
+    background-color: rgb(223, 240, 252);
+}
