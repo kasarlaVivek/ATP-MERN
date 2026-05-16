@@ -1,15 +1,15 @@
 import Products from './components/Products';
 import './App.css'
-import FormPage from './components/FormPage';
+// import FormPage from './components/FormPage';
 import { useState } from 'react';
-import TaskManager from './components/TaskManager';
+// import TaskManager from './components/TaskManager';
 
 function App() {
   return (
     <div className='parent'>
-      {/* <Products />  */}
+      <Products /> 
       {/* <FormPage/> */}
-      <TaskManager />
+      {/* <TaskManager /> */}
     </div>
   )
 }

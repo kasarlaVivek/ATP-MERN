@@ -48,13 +48,23 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">🌍 Country Explorer</h1>
+    <div className="app-container">
+      <h1 className="header-title">Country Explorer</h1>
       
       <SearchBar onSearch={handleSearch} query={query} />
 
-      {loading && <p className="text-center text-blue-500">Loading countries...</p>}
-      {error && <p className="text-center text-red-500">Error: {error}</p>}
+      {loading && (
+        <div className="loader-container">
+          <div className="spinner"></div>
+          <p className="status-text" style={{margin: 0}}>Exploring countries...</p>
+        </div>
+      )}
+      
+      {error && !loading && (
+        <div style={{textAlign: 'center'}}>
+          <p className="error-text">Error: {error}</p>
+        </div>
+      )}
       
       {!loading && !error && <CountryList countries={countries} />}
     </div>
