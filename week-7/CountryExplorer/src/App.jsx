@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef} from "react";
-import SearchBar from "./components/SearchBar";
-import CountryList from "./components/CountryList";
+import SearchBar from "./Components/SearchBar";
+import CountryList from "./Components/CountryList";
 
 function App() {
   const [countries, setCountries] = useState([]);
