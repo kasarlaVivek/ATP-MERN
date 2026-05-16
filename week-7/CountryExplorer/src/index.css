@@ -29,12 +29,21 @@ body {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .app-container {
@@ -74,14 +83,14 @@ body {
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .search-input:focus {
   outline: none;
   border-color: var(--primary);
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.15), 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.15), 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .search-input::placeholder {
@@ -127,8 +136,8 @@ body {
 
 .country-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(255,255,255,0.2);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(139, 92, 246, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(139, 92, 246, 0.15);
 }
 
 .country-flag-container {
@@ -204,6 +213,7 @@ body {
   .header-title {
     font-size: 2.5rem;
   }
+
   .app-container {
     padding: 2rem 1rem;
   }

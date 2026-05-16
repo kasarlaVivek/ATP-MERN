@@ -2,10 +2,10 @@ function CountryCard({ country }) {
   return (
     <div className="country-card">
       <div className="country-flag-container">
-        <img 
-          src={country.flags.png} 
-          alt={country.name.common} 
-          className="country-flag" 
+        <img
+          src={country.flags.png}
+          alt={country.name.common}
+          className="country-flag"
         />
       </div>
       <div className="country-info">

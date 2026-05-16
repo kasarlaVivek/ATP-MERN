@@ -1,17 +1,12 @@
 import Products from './components/Products';
-import './App.css'
-// import FormPage from './components/FormPage';
-import { useState } from 'react';
-// import TaskManager from './components/TaskManager';
+import './App.css';
 
 function App() {
   return (
     <div className='parent'>
       <Products /> 
-      {/* <FormPage/> */}
-      {/* <TaskManager /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

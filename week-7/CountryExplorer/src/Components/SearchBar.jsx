@@ -2,10 +2,10 @@ import { useEffect, useRef } from "react";
 
 function SearchBar({ onSearch, query }) {
     const inputRef = useRef(null);
-    
+
     // Auto-focus on page load
     useEffect(() => {
-        if(inputRef.current) {
+        if (inputRef.current) {
             inputRef.current.focus();
         }
     }, []);

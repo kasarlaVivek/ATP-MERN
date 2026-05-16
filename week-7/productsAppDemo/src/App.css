@@ -1,9 +1,4 @@
-@import "tailwindcss";
-.parent{
-    background-color: #fff;
-    height: auto; 
-    background-color: #dde1ff;
-    overflow: auto;
-    margin: 7px 21px;
-    padding: 7px 21px;
+/* App styles are handled via index.css for global design consistency */
+.parent {
+  min-height: 100vh;
 }
